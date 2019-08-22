@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Result>
+	<SqlConfig>
+		<ID>1</ID>
+		<GDJDM>12</GDJDM>
+	</SqlConfig>
+	<SqlConfig>
+		<ID>2</ID>
+		<GDJDM>AA</GDJDM>
+	</SqlConfig>
+</Result>

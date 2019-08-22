@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: webservice-dmo
+  datasource:
+      driver-class-name: oracle.jdbc.OracleDriver
+      url: jdbc:oracle:thin:@127.0.0.1:1521:ORCL  #Jdbc IP for LZSH
+      username: system
+      password: xuxiao
+      hikari:
+        connection-timeout: 90000
+mybatis:
+  mapper-locations:
+    - classpath*:mappers/**/*Mapper.xml
+  type-aliases-package: com.example.demo.entity;
+server:
+  servlet:
+    context-path: /
+  port: 8080
+logging:
+  config: classpath:logback.xml
+  

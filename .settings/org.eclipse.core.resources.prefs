@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java=GBK
+encoding//src/main/java/com/example/demo/client/CxfClient.java=UTF-8
+encoding//src/main/java/com/example/demo/service/UserService.java=UTF-8
+encoding//src/main/java/com/example/demo/service/impl/UserServiceImpl.java=UTF-8
+encoding//src/main/resources=GBK
+encoding//src/test/java=GBK
+encoding//src/test/resources=GBK
+encoding/<project>=UTF-8

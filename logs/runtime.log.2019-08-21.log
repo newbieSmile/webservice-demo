@@ -1,0 +1,32 @@
+2019-08-21 09:45:42.416 [main] INFO  com.example.demo.WebserviceDemoApplication - Starting WebserviceDemoApplication on DESKTOP-J2C5Q50 with PID 7560 (F:\SGWorkSpace\webservice-demo\target\classes started by Administrator in F:\SGWorkSpace\webservice-demo)
+2019-08-21 09:45:42.419 [main] INFO  com.example.demo.WebserviceDemoApplication - No active profile set, falling back to default profiles: default
+2019-08-21 09:45:42.464 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@436813f3: startup date [Wed Aug 21 09:45:42 CST 2019]; root of context hierarchy
+2019-08-21 09:45:42.971 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-08-21 09:45:43.600 [main] INFO  o.s.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2019-08-21 09:45:44.710 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-08-21 09:45:44.725 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-08-21 09:45:44.726 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-08-21 09:45:44.840 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-08-21 09:45:44.841 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2377 ms
+2019-08-21 09:45:45.484 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'CXFServlet' to [/soap/*]
+2019-08-21 09:45:45.486 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'CXFServlet' to [/services/*]
+2019-08-21 09:45:45.486 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet CXFServlet was not registered (possibly already registered?)
+2019-08-21 09:45:45.489 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-21 09:45:45.489 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-21 09:45:45.489 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-21 09:45:45.490 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-21 09:45:45.638 [main] INFO  o.a.c.w.s.factory.ReflectionServiceFactoryBean - Creating Service {http://service.demo.example.com/}UserService from class com.example.demo.service.UserService
+2019-08-21 09:45:45.938 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /userService
+2019-08-21 09:45:46.178 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@436813f3: startup date [Wed Aug 21 09:45:42 CST 2019]; root of context hierarchy
+2019-08-21 09:45:46.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-21 09:45:46.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-21 09:45:46.266 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-21 09:45:46.266 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-21 09:45:46.296 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-21 09:45:46.499 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-08-21 09:45:46.514 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-21 09:45:46.526 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-08-21 09:45:46.539 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-08-21 09:45:46.561 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-08-21 09:45:46.564 [main] INFO  com.example.demo.WebserviceDemoApplication - Started WebserviceDemoApplication in 4.474 seconds (JVM running for 5.055)
+2019-08-21 09:45:59.813 [main] INFO  com.example.demo.client.CxfClient - 开始 main2...
