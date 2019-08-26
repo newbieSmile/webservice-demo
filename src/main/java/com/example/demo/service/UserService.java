@@ -11,10 +11,11 @@ import com.example.demo.entity.SqlConfig;
 public interface UserService {
 
     @WebMethod 
+    @WebResult(name="getSqlConfig")
     public SqlConfig getSqlConfig(@WebParam(name = "ID") String id);
 
     @WebMethod
-    @WebResult(name="String",targetNamespace="")
+    @WebResult(name="getUserName")
     public String getUserName(@WebParam(name = "ID") String id);
 
 }  

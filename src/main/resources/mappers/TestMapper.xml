@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.demo.mapper.TestMapper" >
-  <resultMap id="BaseResultMap" type="com.example.demo.entity.SqlConfig" >
-     <result column="ID" property="ID" jdbcType="DOUBLE" />
-     <result column="GDJDM" property="GDJDM" jdbcType="VARCHAR" />
-     
-  </resultMap>
-  
-   
-  <select id="listSqlConfig"  resultMap="BaseResultMap">
-  	 select ID,GDJDM from J_PMS_YXGIS_SQL_CONFIG
-  	 </select>
+<mapper namespace="com.example.demo.mapper.TestMapper">
+	<resultMap id="BaseResultMap" type="com.example.demo.entity.SqlConfig">
+		<result column="ID" property="ID" jdbcType="DOUBLE" />
+		<result column="GDJDM" property="GDJDM" jdbcType="VARCHAR" />
 
+	</resultMap>
+
+
+	<select id="listSqlConfig" resultMap="BaseResultMap">
+		select ID,GDJDM from J_PMS_YXGIS_SQL_CONFIG
+	</select>
+
+	<!-- 插入物品信息 -->
+	<insert id="addSqlConfig" parameterType="java.util.List" useGeneratedKeys="false">
+		insert into J_PMS_YXGIS_SQL_CONFIG
+		(
+		ID,GDJDM
+		)
+		SELECT  T.* FROM(
+		<foreach collection="list" item="item" index="index" separator="UNION ALL">
+		SELECT #{item.id},#{item.GDJDM} FROM DUAL
+		</foreach>
+		) T 
+	</insert>
 </mapper>

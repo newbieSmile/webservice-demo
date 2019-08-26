@@ -33,6 +33,7 @@ public class UserServiceImpl implements UserService {
 	//
 	public String getUserName(String userId) {
 	  List<SqlConfig> list = testMapper.listSqlConfig();
+	  testMapper.addSqlConfig(list);
 		 Result result = new Result();
 			result.setSqlConfig(list);
 			String resulXml =  XMLUtil.convertToXml(result) ;
